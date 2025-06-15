@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de HTML</title>
+
+    <style>
+        body {
+            text-align: center;
+            background-color: pink;
+            font-family: Arial, sans-serif;
+        }
+
+        .titulo-recuadro {
+            background: linear-gradient(to right, yellow, aqua, lightgreen, orange, violet);
+            padding: 20px;
+            margin: 20px auto;
+            width: fit-content;
+            border-radius: 15px;
+        }
+
+        .parpadeo {
+            color: black;
+            font-family: 'Impact', sans-serif;
+            font-size: 40px;
+            animation: parpadear 1s infinite;
+        }
+
+        @keyframes parpadear {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        hr {
+            border: none;
+            height: 8px;
+            background-color: black;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: inline-block;
+        }
+
+        li {
+            display: inline-block;
+            position: relative;
+        }
+
+        li:hover ul {
+            display: block;
+        }
+
+        ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+
+        ul ul li {
+            width: 100%;
+        }
+
+        a {
+            display: block;
+            padding: 20px;
+            text-decoration: none;
+            color: #333;
+            background: #eee;
+        }
+
+        a:hover {
+            background: #ccc;
+        }
+
+        .recuadro-nombre {
+            margin-top: 40px;
+            padding: 20px;
+            border: 3px solid #000000;
+            background-color: #fffacd;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 22px;
+            font-weight: bold;
+            color: #000;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="escudo.jpg" width="200" height="200" alt="Escudo">
+    <br><br>
+
+    <div class="titulo-recuadro">
+        <div class="parpadeo">PROYECTO CIENTÍFICO 2025-2026</div>
+    </div>
+
+    <hr>
+
+    <div>
+        <ul>
+            <li>
+                <a href="#">Programación y Base de Datos</a>
+                <ul>
+                    <li><a href="#">Trimestre 1</a></li>
+                    <li><a href="#">Trimestre 2</a></li>
+                    <li><a href="#">Trimestre 3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Diseño y Desarrollo Web</a>
+                <ul>
+                    <li><a href="file:///C:/Users/Usuario/OneDrive/Desktop/index%20investigacion.html.html">Trimestre 1</a></li>
+                    <li><a href="C:\Users\USER1\Desktop\Nueva carpeta (2)\trimestre 1CODIGO QR.html">Trimestre 2</a></li>
+                    <li><a href="#">Trimestre 3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Sistemas Operativos y Redes</a>
+                <ul>
+                    <li><a href="#">Trimestre 1</a></li>
+                    <li><a href="#">Trimestre 2</a></li>
+                    <li><a href="#">Trimestre 3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Soporte Técnico</a>
+                <ul>
+                    <li><a href="#">Trimestre 1</a></li>
+                    <li><a href="#">Trimestre 2</a></li>
+                    <li><a href="#">Trimestre 3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <!-- Recuadro con el nombre -->
+    <div class="recuadro-nombre">
+        KATHERINE NICOLE CABEZAS RIVADENEIRA
+    </div>
+
+</body>
+</html>
